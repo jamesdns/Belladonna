@@ -1,0 +1,74 @@
+.navBar{
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.currentImage{
+	display:none;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	background-color: rgb(127, 131, 134);
+}
+
+li{
+	width: 14.28%;
+	float: left;
+}
+
+li a {
+	display: block;
+	color : white;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	font-family: 'Epilogue', sans-serif;
+
+}
+
+li a:hover{
+	background-color:white;
+	color: rgb(127, 131, 134);
+}
+
+.logoDiv{
+	background-color: rgb(127, 131, 134);
+	
+    
+}
+
+#logo{
+	display: block; 
+	height: 100px; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+body{
+	margin: 0px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: 1}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: 1}
+	to {opacity: 1}
+  } */
