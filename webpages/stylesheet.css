@@ -15,6 +15,7 @@ ul{
 	padding:0;
 	overflow: hidden;
 	background-color: rgb(127, 131, 134);
+	border-bottom: solid white 2px;;
 }
 
 li{
@@ -28,7 +29,7 @@ li a {
 	text-align: center;
 	padding: 15px 20px;
 	text-decoration: none;
-	font-family: 'Epilogue', sans-serif;
+	font-family: 'Josefin Slab', serif;
 
 }
 
@@ -57,11 +58,13 @@ body{
 	overflow-x: hidden;
 }
 
-.container{
-	margin-top: 20px;
+.galleryBodyContainer{
+	margin-top: 140px;
 	margin-left: 2%;
 	margin-right: 2%;
 	padding: 10px;
+	background-color: whitesmoke;
+	height: 100%;
 }
 
 .galleryHeader{
@@ -69,8 +72,13 @@ body{
 	font-size: 34px;
 }
 
+.indexContainer{
+	margin-left: 15%;
+	margin-right: 15%;
+}
 
-.galleryContainer {
+
+.galleryImageContainer {
 	/* Prevent vertical gaps */
 	line-height: 0;
 	
@@ -117,6 +125,45 @@ body{
    }
  }
  
+#contact{
+	display: block;
+	float: left;
+	font-family: 'Josefin Slab', serif;
+	font-size: 34px;
+	width: 60%;
+}
+
+ iframe{
+	 margin-top: 20px;
+	 margin-right: 20px;
+	 margin-bottom: 20px;
+	 float: right;
+	 display: inline-block;
+ }
+
+ .mainText{
+	font-family: 'Josefin Slab', serif;
+	font-size: 20px;
+ }
+
+ .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 40%;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+  }
+
+  .fa-facebook{
+	background: #3B5998;
+  	color: white;
+  }
+
+  .fa-instagram{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  	color: white;
+  }
 
 /* .fade {
 	-webkit-animation-name: fade;
