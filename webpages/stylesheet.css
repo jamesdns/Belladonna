@@ -2,6 +2,7 @@
 	display: block;
 	top: 0;
 	width: 100%;
+	position: fixed;
 }
 
 h1{
@@ -10,6 +11,11 @@ h1{
 
 .currentImage{
 	display:none;
+}
+
+.imageSlideshow{
+	margin-top: 150px;
+	background-color: black;
 }
 
 ul{
@@ -62,6 +68,16 @@ body{
 	overflow-x: hidden;
 }
 
+.imageContainer{
+}
+
+.photo{
+	margin-left: 5px;
+	height: 295px;
+	width: 290px;
+	object-fit: cover;
+}
+
 .galleryBodyContainer{
 	margin-top: 140px;
 	margin-left: 2%;
@@ -70,6 +86,7 @@ body{
 	background-color: whitesmoke;
 	height: 100%;
 }
+
 
 .galleryHeader{
 	font-family: 'Josefin Slab', serif;
@@ -185,11 +202,12 @@ body{
   	color: white;
   }
 
+
   .fade {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
+	-webkit-animation-duration: 2s;
 	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-duration: 2s;
   }
   
   @-webkit-keyframes fade {

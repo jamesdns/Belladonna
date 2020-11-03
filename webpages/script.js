@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     function slideShow() {
     var i;
-    var images = document.getElementsByClassName("currentImage");
+    var images = $(".currentImage");
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "none";
     }
