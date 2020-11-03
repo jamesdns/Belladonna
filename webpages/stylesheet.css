@@ -1,8 +1,11 @@
 .navBar{
 	display: block;
-	position: fixed;
 	top: 0;
 	width: 100%;
+}
+
+h1{
+	font-size: 50px;
 }
 
 .currentImage{
@@ -15,7 +18,8 @@ ul{
 	padding:0;
 	overflow: hidden;
 	background-color: rgb(127, 131, 134);
-	border-bottom: solid white 2px;;
+	border-bottom: solid white 2px;
+	font-size: bold;
 }
 
 li{
@@ -133,12 +137,28 @@ body{
 	width: 60%;
 }
 
+
+/* styling for facebook plugin */
  iframe{
 	 margin-top: 20px;
 	 margin-right: 20px;
 	 margin-bottom: 20px;
 	 float: right;
 	 display: inline-block;
+ }
+
+ .centeredHeading{
+
+ }
+
+ .bodyContent{
+	font-family: 'Josefin Slab', serif;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 200px;
+	color: black;
+	display: inline-block;
+	font-size: 20px;
  }
 
  .mainText{
@@ -165,7 +185,7 @@ body{
   	color: white;
   }
 
-/* .fade {
+  .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
 	animation-name: fade;
@@ -173,11 +193,11 @@ body{
   }
   
   @-webkit-keyframes fade {
-	from {opacity: 1}
+	from {opacity: 0.1}
 	to {opacity: 1}
   }
   
   @keyframes fade {
-	from {opacity: 1}
+	from {opacity: 0.1}
 	to {opacity: 1}
-  } */
+  } 
