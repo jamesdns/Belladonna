@@ -1,0 +1,112 @@
+/* navBar styling */
+.navBar{
+    display: block;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.currentImage{
+    display:none;
+}
+
+.imageSlideshow{
+    background-color: black;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color: rgb(127, 131, 134);
+    border-bottom: solid white 2px;
+    font-size: bold;
+}
+
+li{
+    width: 14.28%;
+    float: left;
+}
+
+li a {
+    display: block;
+    color : white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+li a:hover{
+    background-color:white;
+    color: rgb(127, 131, 134);
+}
+
+.logoDiv{
+    background-color: rgb(127, 131, 134);
+}
+
+#logo{
+    display: block; 
+    height: 100px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* General page layout */
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bodyContent{
+    font-family: 'Josefin Slab', serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/* Styling for scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background:  rgb(127, 131, 134);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(209,209,209);
+}
+
+/* Styling for gallery page */
+.galleryBodyContainer{
+    margin-top: 150px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.galleryHeader{
+    font-family: 'Josefin Slab', serif;
+    font-size: 34px;
+}
+
+.galleryPhoto {
+    margin: 40px 28px 40px 28px;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
