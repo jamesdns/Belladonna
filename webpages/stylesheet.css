@@ -104,7 +104,7 @@
 		font-family: 'Josefin Slab', serif;
 		margin-left: 10%;
 		margin-right: 10%;
-		color: black;
+		color:  black;
 		display: inline-block;
 		font-size: 20px;
 	}
@@ -144,50 +144,25 @@
 	}
 
 	.imageSlideshow{
-		background-color: black;
+		background-color:  whitesmoke;
 	}
 
-/* Styling for gallery page */
-	.galleryBodyContainer{
-		margin-left: 2%;
-		margin-right: 2%;
-		padding: 10px;
-		background-color: whitesmoke;
-		height: 100%;
-	}
-
-	.galleryHeader{
-		font-family: 'Josefin Slab', serif;
-		font-size: 34px;
-	}
-
-	.galleryImageContainer{
-	}
-
-	.galleryPhoto {
-		margin: 40px 28px 40px 28px;
-		object-fit: cover;
-		width: 300px;
-		height: 300px;
-	}
 /* styling for facebook plugin */
+	#facebookContainer{
+		margin-top: 10px;
+		display: inline-block;
+	}
 
+	#contactContent{
+		width: 1100px;
+		min-width: 800px;
+		vertical-align: top;
+		display: inline-block;
+	}
 
- #facebookContainer{
-	margin-top: 10px;
-	display: inline-block;
- }
-
- #contactContent{
-	width: 1100px;
-	min-width: 800px;
-	vertical-align: top;
-	display: inline-block;
- }
-
-.galleryLink{
-	float: right;
-}
+	.galleryLink{
+		float: right;
+	}
 
 /* Syling for social media buttons */
 	.fa {
@@ -197,7 +172,6 @@
 	text-align: center;
 	text-decoration: none;
 	margin: 0px 20px 0px 0px;
-
 	}
 
 	.fa-facebook{
@@ -213,17 +187,17 @@
 /* Index slideshow */
 	.fade {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 1s;
 	animation-name: fade;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	}
 
 	@-webkit-keyframes fade {
-	from {opacity: 0.1}
+	from {opacity: 0.7}
 	to {opacity: 1}
 	}
 
 	@keyframes fade {
-	from {opacity: 0.1}
+	from {opacity: 0.7}
 	to {opacity: 1}
 	} 
