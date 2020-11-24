@@ -7,6 +7,15 @@
 	font-family: 'Josefin Slab', serif;
 }
 
+#webdesignlink{
+	font-size: small;
+	text-align: center;
+	background-color: rgb(127, 131, 134);
+	color: white;
+	font-family: 'Josefin Slab', serif;
+	padding: 5px;
+}
+
 #desktopnav{
 	display: none;
 }
@@ -219,6 +228,15 @@ li a:hover, .dropdown:hover .dropdownbutton {
 
 h1{
     font-size: 50px;
+}
+
+#webdesignlink{
+	font-size: large;
+	text-align: center;
+	background-color: rgb(127, 131, 134);
+	color: white;
+	font-family: 'Josefin Slab', serif;
+	padding: 5px;
 }
 
 #desktopnav{
