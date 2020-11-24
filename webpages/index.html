@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
@@ -15,7 +15,7 @@
                 <img src="images\logo.png" id="logo"> 
             </a>
         </div>
-        <ul>
+        <ul id="desktopnav">
             <li><a href="index.html">Home</a></li>
             <li><a href="weddings.html">Weddings</a></li>
             <li><a href="sympathy.html">Sympathy</a></li>
@@ -31,23 +31,56 @@
                 </div>
             </div>
         </ul>
+        <ul id="mobilenav1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropdownbutton"> Gallery </button>
+                <div class="dropdowncontent">
+                    <a href="gallery.html#galleryWeddings">Weddings</a>
+                    <a href="gallery.html#gallerySympathy">Sympathy</a>
+                    <a href="gallery.html#galleryGifts">Gifts</a>
+                </div>
+            </div>
+            
+        </ul>
+        <ul id="mobilenav2">
+            <li><a href="#seasonal">Seasonal</a></li>
+            <li><a href="weddings.html">Weddings</a></li>
+            <li><a href="sympathy.html">Sympathy</a></li>
+            <li><a href="gifts.html">Gifts</a></li>
+        </ul>
     </div>
+    
+        
+    
     <div class="imageSlideshow">
         <div class="currentImage fade">
             <a href="weddings.html">
-                <img src="images\weddings.jpg">
+                <img src="images\weddings.jpg" class="slideshowimage">
             </a>
         </div>
         <div class="currentImage fade">
             <a href="gifts.html">
-                <img src="images\gifts.jpg">
+                <img src="images\gifts.jpg" class="slideshowimage">
             </a>
         </div>
         <div class="currentImage fade">
             <a href="sympathy.html">
-                <img src="images\sympathy.jpg">
+                <img src="images\sympathy.jpg" class="slideshowimage">
             </a>
         </div>
+    </div>
+    <div id ="indexImages">
+        <a href="weddings.html">
+        <img src="images\weddings.jpg" class="slideshowimage">
+        </a>
+        <a href="gifts.html">
+            <img src="images\gifts.jpg" class="slideshowimage">
+        </a>
+        <a href="sympathy.html">
+            <img src="images\sympathy.jpg" class="slideshowimage">
+        </a>
     </div>
 </body>
 </html>

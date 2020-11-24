@@ -1,73 +1,79 @@
 /* navBar styling */
-.navBar{
+
+.navBar {
     display: block;
     top: 0;
     width: 100%;
     position: fixed;
-    font-size: 18px;
+    font-size: medium;
     font-family: 'Josefin Slab', serif;
 }
 
-h1{
+#desktopnav {
+    display: none;
+}
+
+h1 {
     font-size: 50px;
 }
 
-.currentImage{
-    display:none;
+.currentImage {
+    display: none;
 }
 
-.imageSlideshow{
-    background-color: black;
+.imageSlideshow {
+    display: none;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
-    padding:0;
+    padding: 0;
     overflow: hidden;
     background-color: rgb(127, 131, 134);
     border-bottom: solid white 2px;
     font-size: bold;
 }
 
-li{
-    width: 14.28%;
+li {
+    width: 25%;
     float: left;
 }
 
 li a {
     display: block;
-    color : white;
+    color: white;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
     font-family: 'Josefin Slab', serif;
-
 }
 
 li a:hover, .dropdown:hover .dropdownbutton {
-    background-color:white;
+    background-color: white;
     color: rgb(127, 131, 134);
 }
 
-.logoDiv{
+.logoDiv {
     background-color: rgb(127, 131, 134);
 }
 
-#logo{
-    display: block; 
-    height: 100px; 
-    margin-left: auto; 
+#logo {
+    display: block;
+    height: 60px;
+    margin-left: auto;
     margin-right: auto;
 }
 
 /* Styling for dropdown */
-.dropdown{
+
+.dropdown {
+    width: 25%;
     display: block;
     overflow: hidden;
 }
 
-.dropdown .dropdownbutton{
+.dropdown .dropdownbutton {
     font-size: 18px;
     background-color: rgb(127, 131, 134);
     color: white;
@@ -86,10 +92,10 @@ li a:hover, .dropdown:hover .dropdownbutton {
     min-width: 160px;
     z-index: 1;
 }
-  
+
 .dropdowncontent a {
     float: none;
-    color:  rgb(127, 131, 134);
+    color: rgb(127, 131, 134);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -101,25 +107,69 @@ li a:hover, .dropdown:hover .dropdownbutton {
     color: rgb(127, 131, 134);
 }
 
-.dropdown:hover .dropdowncontent{
+.dropdown:hover .dropdowncontent {
     display: block;
 }
 
 /* General page layout */
-body{
+
+body {
     background-color: whitesmoke;
     margin: 0px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.bodyContent{
+.bodyContent {
     font-family: 'Josefin Slab', serif;
     margin-left: 10%;
     margin-right: 10%;
     color: black;
     display: inline-block;
     font-size: 20px;
+}
+
+/* makes the scrollbar transparent so it is hidden but can still be used */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.photo {
+    margin-left: 5px;
+    height: 295px;
+    width: 290px;
+    object-fit: cover;
+}
+
+.indexContainer {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#contact {
+    display: block;
+    float: left;
+    font-family: 'Josefin Slab', serif;
+    font-size: 34px;
+    width: 60%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.currentImage {
+    display: none;
+}
+
+.imageSlideshow {
+    background-color: whitesmoke;
+}
+
+.slideshowimage {
+    width: 100%;
 }
 
 /* Styling for scrollbar */
@@ -160,3 +210,219 @@ body{
     width: 300px;
     height: 300px;
 }
+
+@media only screen and (min-width: 1920px) {
+    /* navBar styling */
+    .navBar {
+        display: block;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        font-size: x-large;
+        font-family: 'Josefin Slab', serif;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    #desktopnav {
+        display: block;
+    }
+    #mobilenav1 {
+        display: none;
+    }
+    #mobilenav2 {
+        display: none;
+    }
+    .currentImage {
+        display: none;
+    }
+    .imageSlideshow {
+        display: inline;
+        background-color: black;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(127, 131, 134);
+        border-bottom: solid white 2px;
+        font-size: bold;
+    }
+    li {
+        width: 14.28%;
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-family: 'Josefin Slab', serif;
+    }
+    li a:hover, .dropdown:hover .dropdownbutton {
+        background-color: white;
+        color: rgb(127, 131, 134);
+    }
+    .logoDiv {
+        background-color: rgb(127, 131, 134);
+    }
+    #logo {
+        display: block;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Styling for dropdown */
+    .dropdown {
+        font-size: x-large;
+        width: 14%;
+        display: block;
+        overflow: hidden;
+    }
+    .dropdown .dropdownbutton {
+        font-size: x-large;
+        background-color: rgb(127, 131, 134);
+        color: white;
+        font-family: 'Josefin Slab', serif;
+        text-align: center;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    .dropdowncontent {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        z-index: 1;
+    }
+    .dropdowncontent a {
+        float: none;
+        color: rgb(127, 131, 134);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdowncontent a:hover {
+        background-color: #f0eded;
+        color: rgb(127, 131, 134);
+    }
+    .dropdown:hover .dropdowncontent {
+        display: block;
+    }
+    /* General page layout */
+    body {
+        background-color: whitesmoke;
+        margin: 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .bodyContent {
+        font-family: 'Josefin Slab', serif;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: black;
+        display: inline-block;
+        font-size: 20px;
+    }
+    #indexImages {
+        display: none;
+    }
+    /* makes the scrollbar transparent so it is hidden but can still be used */
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+    .photo {
+        margin-left: 5px;
+        height: 295px;
+        width: 290px;
+        object-fit: cover;
+    }
+    .indexContainer {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #contact {
+        display: block;
+        float: left;
+        font-family: 'Josefin Slab', serif;
+        font-size: 34px;
+        width: 60%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .currentImage {
+        display: none;
+    }
+    .imageSlideshow {
+        background-color: whitesmoke;
+    }
+    .slideshowimage {
+        width: 100%;
+    }
+   
+    /* Index slideshow */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0.7
+        }
+        to {
+            opacity: 1
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: 0.7
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* Styling for scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        /* background colour of the scroll bar */
+        background: rgb(127, 131, 134);
+    }
+    ::-webkit-scrollbar-thumb {
+        /* background colour of the scroll bar button */
+        background: rgb(209, 209, 209);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: white;
+    }
+    /* Styling for gallery page */
+    .galleryBodyContainer {
+        margin-top: 150px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 10px;
+        background-color: whitesmoke;
+        height: 100%;
+    }
+    .galleryHeader {
+        font-family: 'Josefin Slab', serif;
+        font-size: 34px;
+    }
+    .galleryPhoto {
+        margin: 40px 28px 40px 28px;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
+}
+
